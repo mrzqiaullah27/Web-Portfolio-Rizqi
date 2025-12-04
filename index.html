@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Mohammad Rizqi Aulia Abdillah</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Ikon (opsional, bisa dihapus kalau tidak perlu) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ====== NAVBAR ====== -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <div class="logo"><span></span></div>
+            <nav class="nav-links">
+                <a href="#hero">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="#skills">Skill</a>
+                <a href="#projects">Projek</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Tema">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <button id="navToggle" class="icon-btn nav-toggle" aria-label="Toggle Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="hero-tag">Mahasiswa Mekatronika & Kecerdasan Buatan</p>
+                    <h1>Halo, saya <span>Mohammad Rizqi Aulia Abdillah</span></h1>
+                    <p class="hero-subtitle">
+                        Tertarik pada IoT, otomasi, dan machine learning. Sedang mencari kesempatan magang
+                        untuk mengembangkan skill dan berkontribusi ke dunia industri.
+                    </p>
+
+                    <div class="hero-actions">
+                        <!-- Ganti href CV sesuai file kamu -->
+                        <a href="CV-ATS.pdf" class="btn primary" target="_blank" rel="noopener">
+                            <i class="ri-file-text-line"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn ghost">
+                            <i class="ri-mail-line"></i> Hubungi Saya
+                        </a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="hero-highlight-item">
+                            <span class="number">4</span>
+                            <span class="label">Projek IoT, PLC, Electrical</span>
+                        </div>
+                        <div class="hero-highlight-item">
+                            <span class="number">2</span>
+                            <span class="label">Projek ML dan Computer Vision</span>
+                        </div> 
+                        <div class="hero-highlight-item">
+                            <span class="number">3</span>
+                            <span class="label">Projek Website & Mobile Apps <span>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="hero-photo">
+                    <!-- GANTI FOTO DI SINI -->
+                    <!-- Cukup ganti src ke file foto kamu, misal img/rizqi.jpg -->
+                    <div class="photo-wrapper">
+                        <img src="img/profile-placeholder.jpg" />
+                    </div>
+                    <div class="hero-badge">
+                        <i class="ri-cpu-line"></i>
+                        <span>IoT & Automation Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ABOUT ====== -->
+        <section id="about" class="section">
+            <div class="container section-inner">
+                <div class="section-header">
+                    <p class="section-tag">Tentang Saya</p>
+                    <h2>Profil Singkat</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Saya adalah mahasiswa Program Studi Mekatronika dan Kecerdasan Buatan di Universitas Pendidikan Indonesia
+                            Kampus Purwakarta. Fokus saya pada pengembangan sistem berbasis Internet of Things (IoT), otomasi,
+                            dan penerapan machine learning untuk pemecahan masalah dunia nyata.
+                        </p>
+                        <p>
+                            Saya terbiasa bekerja dalam tim, mengelola proyek, dan membuat dokumentasi teknis. Saya tertarik
+                            untuk magang di perusahaan yang bergerak di bidang teknologi, manufaktur, otomasi, atau riset
+                            berbasis data.
+                        </p>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <h3>Minat Utama</h3>
+                            <ul>
+                                <li>Internet of Things (IoT)</li>
+                                <li>Embedded System & Mikrokontroler</li>
+                                <li>Machine Learning</li>
+                                <li>Otomasi & Robotika</li>
+                            </ul>
+                        </div>
+                        <div class="about-card">
+                            <h3>Ringkasan</h3>
+                            <ul>
+                                <li>Terbiasa menggunakan Arduino & ESP32</li>
+                                <li>Pernah mengerjakan beberapa projek praktikum dan tugas akhir mata kuliah</li>
+                                <li>Siap belajar teknologi baru sesuai kebutuhan industri</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SKILLS ====== -->
+        <section id="skills" class="section section-alt">
+            <div class="container section-inner">
+                <div class="section-header center">
+                    <p class="section-tag">Skill</p>
+                    <h2>Teknologi & Tools</h2>
+                    <p class="section-description">
+                        Beberapa skill utama yang saya gunakan dalam perkuliahan, projek, dan eksperimen pribadi.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Programming</h3>
+                        <p>Python, C/C++, Java, JavaScript, Html, Css, Robot Programming</p>
+                        <div class="skill-badges">
+                            <span>Python</span>
+                            <span>C/C++</span>
+                            <span>Java</span>
+                            <span>JavaScript</span>
+                            <span>Html</span>
+                            <span>Css</span>
+                            <span>Robot Programming</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>IoT & Automation</h3>
+                        <p>Arduino, ESP32, Omron PLC, Delta PLC, Dobot Robotic Arm Manipulation</p>
+                        <div class="skill-badges">
+                            <span>Arduino</span>
+                            <span>ESP32</span>
+                            <span>Omron PLC</span>
+                            <span>Delta PLC</span>
+                            <span>obot Robotic Arm Manipulation</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Machine Learning & OpenCV</h3>
+                        <p>Pnerapkan ML dan computer vision untuk projek seperti deteksi kantuk, gesture tangan, dan analisis data sederhana</p>
+                       <div class="skill-badges">
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                            <span>Scikit-learn</span>
+                            <span>Gesture Detection</span>
+                            <span>Drowsiness Detection</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools & Lainnya</h3>
+                        <p>Git, Figma/Canva, Microsoft Office, Microsoft Word, SPSS</p>
+                        <div class="skill-badges">
+                            <span>Git</span>
+                            <span>Figma</span>
+                            <span>Canva</span>
+                            <span>Office & Word</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PROJECTS ====== -->
+        <section id="projects" class="section">
+            <div class="container section-inner">
+                <div class="section-header center">
+                    <p class="section-tag">Portfolio</p>
+                    <h2>Projek Terpilih</h2>
+                    <p class="section-description">
+                        Beberapa projek yang pernah saya kerjakan.  
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- PROJEK 1 - GANTI ISINYA -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <!-- GANTI FOTO PROJEK -->
+                            <img src="img/Timbangan.png" alt="Projek IoT 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Automatic Rice Weighing System (ESP32)</h3>
+                            <p>
+                                Timbangan beras otomatis berbasis ESP32 dengan load cell, sensor inframerah, dan servo
+                                untuk mengatur aliran beras dan menimbang secara real time.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">IoT</span>
+                                <span class="tag">ESP32</span>
+                                <span class="tag">Sensor</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://youtu.be/v72xuCXyyV0?si=8Uw5xwIB8VsyysAY" target="_blank" rel="noopener">
+                                    <i class="ri-external-link-line"></i> Detail Projek
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!--    -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <!-- GANTI FOTO PROJEK -->
+                            <img src="img/AI2.png" alt="Projek IoT 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Computer Vision-Based Real Time Drowsiness and Hand Gesture Detection System</h3>
+                            <p>
+                                Membangun sistem deteksi real-time yang menggabungkan pose estimation, hand tracking, dan eye tracking menggunakan MediaPipe. 
+                                Sistem dapat menghitung jumlah jari dengan suara dan mendeteksi mata tertutup menggunakan EAR. Proyek ini dibuat dengan Python, OpenCV, 
+                                dan MediaPipe sebagai prototipe awal sistem anti-kantuk dan kendali gestur berbasis computer vision.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Computer Vision</span>
+                            </div>
+                              <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=jmtSpNGnufo" target="_blank" rel="noopener">
+                                    <i class="ri-external-link-line"></i> Detail Projek
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--    -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <!-- GANTI FOTO PROJEK -->
+                            <img src="img/Omron.png" alt="Projek IoT 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Hydraulic Trainer Simulation of Automated Cutting Machine with Double-Acting Cylinder Control</h3>
+                            <p>
+                                Merancang dan memprogram PLC Omron dengan CX-Programmer untuk mengoperasikan double-acting cylinder secara 
+                                otomatis dalam siklus maju–mundur setiap 3 detik. Sistem menggunakan dua sensor proximity untuk batas gerak dengan akurasi tinggi, 
+                                serta dilengkapi mode manual, tombol aktivasi, 
+                                dan emergency stop. Rancangan ini memastikan operasi yang aman dan stabil pada hydraulic trainer.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">Omron PLC</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=B7XNn_T1zVo" target="_blank" rel="noopener">
+                                    <i class="ri-external-link-line"></i> Detail Projek
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--    -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <!-- GANTI FOTO PROJEK -->
+                            <img src="img/AI.png" alt="Projek IoT 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>TERMINAL AI AGENT & CUSTOM TOOL</h3>
+                            <p>
+                                Mengembangkan AI berbasis terminal menggunakan Python dan OpenRouter API, dengan fitur konversi file, 
+                                pengecekan status sistem, serta pemrosesan perintah otomatis melalui regex. 
+                                Sistem menampilkan output berwarna dan dibuat modular agar mudah dikembangkan.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">AI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--    -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <!-- GANTI FOTO PROJEK -->
+                            <img src="img/Katarak.png" alt="Projek IoT 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Cataract Diagnosis Expert System Using Forward Chaining and Certainty Factor (Web-Based Expert System)</h3>
+                            <p>
+                                Mengembangkan sistem pakar berbasis web untuk diagnosis jenis katarak menggunakan metode Forward Chaining dan Certainty Factor. 
+                                Sistem dibangun dengan HTML, CSS, JavaScript, serta basis aturan JSON, 
+                                dan menampilkan gejala, tingkat keyakinan, serta hasil diagnosis secara interaktif dan responsif.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">Css</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">JSON</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--    -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <!-- GANTI FOTO PROJEK -->
+                            <img src="img/Edu.png" alt="Projek IoT 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Edu Connect - Mobile App Design for Private Tutoring Platform</h3>
+                            <p>Merancang prototype aplikasi Edu Connect dengan Figma untuk membantu orang tua mencari dan memesan tutor. 
+                                Fitur meliputi pencarian tutor, profil, jadwal ketersediaan, 
+                                dan sistem pemesanan dengan alur yang sederhana dan mudah dipahami.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Mobile Application Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/file/1xJEUEQcUss71IBxTaOzHw/Edu-Connect" target="_blank" rel="noopener">
+                                    <i class="ri-external-link-line"></i> Detail Projek
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJEK 2 -->
+                    <article class="project-card" data-category="ml">
+                        <div class="project-image">
+                            <img src="img/PCB.png" alt="Projek ML 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Hand-Cranked Portable Power Bank Using Dynamo Generator</h3>
+                            <p>
+                                Merancang dan membuat power bank portabel berbasis dinamo yang menghasilkan listrik melalui 
+                                mekanisme tuas tekan. Energi mekanik diubah menjadi listrik dan disimpan untuk mengisi perangkat seluler, 
+                                sebagai penerapan konsep energi terbarukan skala kecil dan sistem penyimpanan daya portabel.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">Electrical Wiring</span>
+                                <span class="tag">PCB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJEK 3 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="img/Farn.png" alt="Projek Web 1" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Farminista – JavaFX and MySQL Based Farmer Administration Application</h3>
+                            <p>
+                                Mengembangkan aplikasi desktop Farminista dengan JavaFX untuk membantu petani dan pengelola 
+                                kelompok tani dalam administrasi dan pembukuan. Aplikasi ini mendukung pengelolaan data petani, 
+                                pencatatan transaksi, serta penyimpanan data terstruktur di MySQL. Proyek ini menerapkan konsep OOP, 
+                                koneksi database (JDBC), serta form input dan tabel data yang interaktif.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">JavaFX</span>
+                                <span class="tag">Object-Oriented Programming (OOP)</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Scene Builder</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=2jXDzGZ9hkM" target="_blank" rel="noopener">
+                                    <i class="ri-external-link-line"></i> Detail Projek
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJEK 4 (contoh tambahan) -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <img src="img/Delta.png" alt="Projek IoT 2" />
+                        </div>
+                        <div class="project-content">
+                            <h3>PLC Delta Programming Using ISPSoft and DOPSoft</h3>
+                            <p>
+                                Merancang sistem otomasi berbasis PLC Delta menggunakan ISPSoft serta HMI dengan DOPSoft. 
+                                Simulasi mencakup kontrol level air, pengisian botol berbasis konveyor, dan pemantauan tangki. 
+                                HMI dilengkapi tombol kendali, alarm, dan animasi proses, sementara ladder logic digunakan untuk 
+                                mengendalikan aktuator dan menampilkan status real-time.
+                            </p>
+                            <div class="project-meta">
+                                <span class="tag">Delta PLC</span>
+                                <span class="tag">HMI</span>
+                            </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== CONTACT ====== -->
+        <section id="contact" class="section section-alt">
+            <div class="container section-inner">
+                <div class="section-header center">
+                    <p class="section-tag">Kontak</p>
+                    <h2>Hubungi Saya</h2>
+                    <p class="section-description">
+                        Tertarik untuk berdiskusi atau menawarkan kesempatan magang? Silakan hubungi saya melalui form ini
+                        atau langsung lewat email / media sosial.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Info Kontak</h3>
+                        <ul>
+                            <!-- GANTI EMAIL/NO WA DI SINI -->
+                            <li><i class="ri-mail-line"></i> <a href="mailto:emailkamu@domain.com">mrzqiaullah27@gmail.com</a></li>
+                            <li><i class="ri-phone-line"></i> 0812-2350-6484</li>
+                            <li><i class="ri-map-pin-line"></i> Cirebon, Jawa Barat</li>
+                        </ul>
+
+                        <div class="social-links">
+                         <a href="https://www.linkedin.com/in/mrizqi27/" target="_blank" rel="noopener">
+                          <i class="ri-linkedin-box-line"></i>
+                         </a>
+                         <a href="https://github.com/mrzqiaullah27" target="_blank" rel="noopener">
+                          <i class="ri-github-line"></i>
+                         </a>
+                         <a href="https://www.instagram.com/mrzqiaullah/" target="_blank" rel="noopener">
+                           <i class="ri-instagram-line"></i>
+                          </a>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" placeholder="Nama lengkap" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Alamat email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" rows="4" placeholder="Tulis pesan di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary full">
+                            <i class="ri-send-plane-line"></i> Kirim Pesan
+                        </button>
+                        <p id="formStatus" class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Mohammad Rizqi Aulia Abdillah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
