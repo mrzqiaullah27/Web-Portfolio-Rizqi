@@ -61,34 +61,44 @@ filterButtons.forEach((btn) => {
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 
+const popup = document.getElementById("successPopup");
+const closePopup = document.getElementById("closePopup");
+
+function showPopup() {
+    if (popup) popup.classList.add("show");
+}
+
+function hidePopup() {
+    if (popup) popup.classList.remove("show");
+}
+
+if (closePopup) {
+    closePopup.addEventListener("click", hidePopup);
+}
+
+
 if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Biar nggak reload / kirim beneran
 
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
 
         if (!name || !email || !message) {
-            formStatus.textContent = "Harap lengkapi semua field.";
+            formStatus.textContent = "Harap lengkapi semua field terlebih dahulu.";
             return;
         }
 
-        // Cara simpel: buka email client
-        const subject = encodeURIComponent("Pesan dari " + name + " (Portfolio)");
-        const bodyMail = encodeURIComponent(
-            `Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`
-        );
-
-        // GANTI ALAMAT EMAIL DI SINI
-        const mailto = `mailto:emailkamu@domain.com?subject=${subject}&body=${bodyMail}`;
-        window.location.href = mailto;
-
-        formStatus.textContent = "Terima kasih! Silakan kirim email yang terbuka.";
+                // DI SINI CUMA UI SAJA, TIDAK KIRIM EMAIL
         contactForm.reset();
+        formStatus.textContent = ""; // kalau mau, kosongkan status bawah
+
+        // Tampilkan popup sukses
+        showPopup();
+
     });
 }
-
 // ========== TAHUN FOOTER OTOMATIS ==========
 const yearSpan = document.getElementById("year");
 if (yearSpan) {

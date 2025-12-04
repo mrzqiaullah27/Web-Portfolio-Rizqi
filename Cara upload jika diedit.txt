@@ -1,0 +1,4 @@
+git status            # cek file yang berubah
+git add .
+git commit -m "update portfolio section"   # isi pesan sesuai
+git push origin main
