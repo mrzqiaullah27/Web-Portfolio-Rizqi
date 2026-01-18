@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Projek | Rizqi.dev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">Rizqi<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="projects.html" class="active">Projek</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+            <div class="nav-actions">
+                <button id="navToggle" class="icon-btn mobile-only"><i class="ri-menu-line"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-header center">
+                    <p class="section-tag">Portfolio</p>
+                    <h2>Projek Terpilih</h2>
+                    <p class="section-description">Koleksi lengkap projek akademik dan eksperimen pribadi.</p>
+                </div>
+                <div class="projects-grid" id="projectsContainer"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Mohammad Rizqi Aulia Abdillah. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
