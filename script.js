@@ -2,7 +2,7 @@
 const projectsData = [
     {
         title: "Smart Nutrition Monitoring System",
-        image: "img/Smart.png", 
+        image: "img/smart.png", 
         description: "Sistem IoT berbasis ESP32 untuk memantau nutrisi tanah (pH, TDS, kelembaban) pada tanaman padi secara real-time. Data ditampilkan pada dashboard web Firebase dan dianalisis menggunakan Logika Fuzzy untuk memberikan rekomendasi pertanian cerdas.",
         tech: "Machine Learning · IoT · Embedded Systems · Fuzzy Logic",
         link: "https://www.youtube.com/watch?v=hjmWv9Ygwkk" 
